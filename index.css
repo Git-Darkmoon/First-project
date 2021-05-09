@@ -1,0 +1,279 @@
+body {
+  background: linear-gradient(-40deg, #fff, #fc8764, #ec3f82, #30bfeb, #fff);
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  margin-top: 5.8%;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  text-shadow: 6px 5px 6px #000;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+/*Left Root Button*/
+
+.btnn {
+  min-width: 65px;
+  min-height: 65px;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  margin-right: 80px;
+  margin-top: 20px;
+  color: #313133;
+  background: #4fd1c5;
+  background: linear-gradient(
+    90deg,
+    rgb(104, 255, 232) 0%,
+    rgb(53, 211, 195) 100%
+  );
+  border: none;
+  border-radius: 100px;
+  box-shadow: 8.5px 9px 20px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.btnn::before {
+  content: "";
+  border-radius: 100px;
+  min-width: calc(60px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00ffcb;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btnn:hover {
+  color: #313133;
+  transform: translateY(-10px);
+}
+
+.btnn:hover::before,
+.btnn:focus::before {
+  opacity: 1;
+}
+
+.btnn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00ffcb;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 2s infinite;
+}
+
+.btnn:hover::after {
+  animation: none;
+  display: none;
+}
+
+/*Right Root Button*/
+
+.btnx {
+  min-width: 65px;
+  min-height: 65px;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #313133;
+  background: #4fd1c5;
+  background: linear-gradient(
+    90deg,
+    rgb(104, 255, 232) 0%,
+    rgb(53, 211, 195) 100%
+  );
+  border: none;
+  border-radius: 100px;
+  box-shadow: 8.5px 9px 20px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.btnx::before {
+  content: "";
+  border-radius: 100px;
+  min-width: calc(60px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00ffcb;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btnx:hover {
+  color: #313133;
+  transform: translateY(-10px);
+}
+
+.btnx:hover::before,
+.btnx:focus::before {
+  opacity: 1;
+}
+
+.btnx::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00ffcb;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 2s infinite;
+}
+
+.btnx:hover::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+  }
+  100% {
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+  }
+}
+
+.formControl {
+  background-color: #ffffff8c;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: #ffffff00;
+  width: 250px;
+  border-block-start-color: #ffffff00;
+  text-align: center;
+}
+
+.input-group-text1 {
+  background-color: aliceblue;
+  padding: 7px;
+  padding-left: 20px;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 7px;
+  text-align: center;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.form-control-result {
+  background-color: #9dfaa9b7;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: #ffffff00;
+  width: 250px;
+  border-bottom-left-radius: 23px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 5px;
+  padding-right: 8px;
+  margin-left: 45px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.fa-github {
+  box-sizing: border-box;
+  display: block;
+  color: rgb(31, 110, 255);
+}
+
+.fa-github:hover {
+  transform: translateY(-4px);
+  color: #ffffffab;
+}
+
+.fa-facebook {
+  box-sizing: border-box;
+  display: block;
+  color: rgb(31, 110, 255);
+}
+
+.fa-facebook:hover {
+  transform: translateY(-4px);
+  color: #ffffffab;
+}
+
+.fa-linkedin {
+  box-sizing: border-box;
+  display: block;
+  color: rgb(31, 110, 255);
+}
+
+.fa-linkedin:hover {
+  transform: translateY(-4px);
+  color: #ffffffab;
+}
+
+.fa-envelope {
+  box-sizing: border-box;
+  display: block;
+  color: rgb(31, 110, 255);
+}
+
+.fa-envelope:hover {
+  transform: translateY(-4px);
+  color: #ffffffab;
+}
